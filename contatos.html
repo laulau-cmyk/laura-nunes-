@@ -1,0 +1,34 @@
+
+<html lang="pt-br">
+<head>
+    <title>Opinião e Contato</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulário de Opinião</h1>
+    </header>
+    <article>
+        <form action="enviar.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br><br>
+            
+            <label for="opiniao">Sua Opinião:</label><br>
+            <textarea id="opiniao" name="opiniao" rows="4" cols="50"></textarea><br><br>
+            
+            <label for="avaliacao">Avaliação do site:</label><br>
+            <input type="radio" id="bom" name="avaliacao" value="Bom">
+            <label for="bom">Bom</label><br>
+            <input type="radio" id="regular" name="avaliacao" value="Regular">
+            <label for="regular">Regular</label><br>
+            <input type="radio" id="ruim" name="avaliacao" value="Ruim">
+            <label for="ruim">Ruim</label><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </article>
+    <footer>
+        <a href="index.html">Voltar para Página Inicial</a>
+    </footer>
+</body>
+</html>
